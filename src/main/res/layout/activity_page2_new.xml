@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/features_background">
+
+    <!-- Title Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complaint Categories"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="#202020"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="1dp"
+        android:enabled="false" />
+
+    <!-- Category 1: Electricity -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:onClick="onElectricityClick">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="Electricity Complaint"
+            android:src="@drawable/electricity"
+            android:onClick=""
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/electricity"
+            android:fontFamily="@font/poppins_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="Electricity"
+            android:backgroundTint="#E94D4D"
+            android:textColor="@color/white"
+            android:onClick="onelectricityClick" />
+
+    </LinearLayout>
+
+    <!-- Category 2: Infrastructure -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="3dp"
+        android:onClick="onInfrastructureClick">
+
+        <ImageView
+            android:layout_width="83dp"
+            android:layout_height="80dp"
+            android:contentDescription="Infrastructure Complaint"
+            android:onClick=""
+            android:src="@drawable/infrastructure"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/infrastructure"
+            android:fontFamily="@font/poppins_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:backgroundTint="#E94D4D"
+            android:textColor="@color/white"
+            android:text="Infrastructure"
+            android:onClick="onInfrastructureClick" />
+
+    </LinearLayout>
+
+    <!-- Category 3: Wi-Fi -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="3dp"
+        android:onClick="onWiFiClick">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="Wi-Fi Complaint"
+            android:src="@drawable/wifi1"
+            android:onClick=""
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:backgroundTint="#E94D4D"
+            android:text="Wi-Fi"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_light"
+            android:onClick="onWiFiClick" />
+
+    </LinearLayout>
+
+    <!-- Category 4: Mess Food -->
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="138dp"
+
+        android:gravity="center"
+        android:onClick="onMessFoodClick"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="Mess Food Complaint"
+            android:src="@drawable/mess" />
+
+        <Button
+            android:id="@+id/mess_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#E94D4D"
+            android:fontFamily="@font/poppins_light"
+            android:onClick="onMessFoodClick"
+            android:text="Mess Food"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/features_background">
+
+    <!-- Title Button -->
+    <Button
+        android:id="@+id/logout_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Log out"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="#E13030"/>
+
+    <!-- Option 1: Complain & Review -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:onClick="onComplainReviewClick">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="Complain_Review"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/complain_review_icon" />
+
+        <Button
+            android:id="@+id/complain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:onClick="onComplainClick"
+android:textColor="@color/white"
+            android:text="Complaint"
+android:layout_marginBottom="69dp"
+            android:fontFamily="@font/poppins_light"
+            android:backgroundTint="#E94D4D"
+            android:textColorHighlight="#4689BD"
+            android:textSize="26sp"
+            />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="Leave Application Track_Apply"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/leav_ap" />
+
+        <Button
+            android:id="@+id/leave"
+            android:backgroundTint="#E94D4D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:onClick="onLeaveApplicationClick"
+            android:text="Leave Application"
+            android:textSize="26sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_light"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

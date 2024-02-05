@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewCompPage"
+    android:background="@drawable/features_background"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#050505"
+        android:text="Electricity"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+
+        />
+    <!-- Assuming you have a Spinner in your layout -->
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_margin="10dp">
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#E94D4D"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/elec_ID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Roll number"
+            android:textStyle="bold"
+
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#979595"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#E94D4D"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/descript_elec"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Complaint description"
+            android:textStyle="bold"
+
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#979595"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#E94D4D"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/place_elec"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Mention place"
+            android:textStyle="bold"
+
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#979595"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#E94D4D"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/date_elec"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Date of complaint"
+            android:textStyle="bold"
+
+            android:inputType="date"
+            android:textColor="#000000"
+            android:textColorHint="#979595"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#E94D4D"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tim_elec"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Time of complaint"
+            android:textStyle="bold"
+
+            android:inputType="time"
+            android:textColor="#000000"
+            android:textColorHint="#979595"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#E94D4D"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/contact_elec"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Contact no."
+            android:textStyle="bold"
+
+            android:inputType="phone"
+            android:textColor="#000000"
+            android:textColorHint="#979595"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/uploadButton_elec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#E94D4D"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="leave_application_track_and_apply">Leave Application Track and Apply</string>
+    <string name="complain_new">Complain_New</string>
+    <string name="resolved_complaint">Resolved Complaint</string>
+    <string name="hostel_saathi">Hostel-Saathi</string>
+</resources>
